@@ -1,0 +1,54 @@
+[0.062][INFO]:      ChromeDriver 26.0.1383.0 C:\jars\chromedriver.exe
+[1.861][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [  ],
+   "chromeOptions": {
+      "args": [  ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[1.876][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --ignore-certificate-errors about:blank
+[6.570][INFO]:      Connected to Chrome successfully. Version: 26.0.1410.64
+[6.689][FINE]:      Command received (/session/dce6ea3573b55dd9366fb2a8ce1b975d)
+[6.690][FINE]:      Command finished (/session/dce6ea3573b55dd9366fb2a8ce1b975d) with response {
+   "sessionId": "dce6ea3573b55dd9366fb2a8ce1b975d",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "26.0.1383.0",
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "26.0.1410.64",
+      "webStorageEnabled": true
+   }
+}
+
+[6.757][FINE]:      Command received (/session/dce6ea3573b55dd9366fb2a8ce1b975d/url) with params {
+   "url": "http://tmobile.com/"
+}
+
+[6.757][FINER]:     Waiting for all views to stop loading...
+[6.757][FINER]:     Done waiting for all views to stop loading
+[30.316][FINER]:    Waiting for all views to stop loading...
+[30.328][FINER]:    Done waiting for all views to stop loading
+[30.328][FINE]:     Command finished (/session/dce6ea3573b55dd9366fb2a8ce1b975d/url) with response {
+   "sessionId": "dce6ea3573b55dd9366fb2a8ce1b975d",
+   "status": 0,
+   "value": {
+
+   }
+}
+

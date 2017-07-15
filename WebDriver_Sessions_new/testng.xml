@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+  
+  <test name="Test1">
+  <parameter name="browsers" value="chrome_browser"/>
+  <parameter name="url_test" value="http://localhost:5557/wd/hub"/>
+ 
+    <classes>
+      <class name="GridSelenium.NewTest1"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+  
+  <test name="Test2">
+  <parameter name="browsers" value="ie_browser"/>
+  <parameter name="url_test" value="http://localhost:5559/wd/hub"/>
+  
+    <classes>
+      <class name="GridSelenium.NewTest1"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->

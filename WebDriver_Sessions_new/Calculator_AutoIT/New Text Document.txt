@@ -1,0 +1,13 @@
+Run("Calc.exe")
+WinWaitActive("Calculator")
+WinActive("Calculator")
+
+ControlClick("Calculator", "", "Button5", "Left") ;Click the number 1
+
+ControlClick("Calculator", "", "Button11", "Left") ;Click the number 2
+
+ControlClick("Calculator", "", "Button23", "Left") ;Click the + button
+
+ControlClick("Calculator", "", "Button16", "Left") ;Click the number 3
+
+ControlClick("Calculator", "", "Button28", "Left") ;Click the Equal button

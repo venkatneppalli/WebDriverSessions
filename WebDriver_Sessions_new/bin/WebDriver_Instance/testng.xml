@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rediff">
+
+
+<test name="Login and Check mail">
+
+    <classes>
+        <class name="WebDriver_Instance.Driver_Script" ></class>  
+    </classes>
+</test>
+
+
+</suite>

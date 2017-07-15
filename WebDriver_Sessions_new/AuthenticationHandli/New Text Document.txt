@@ -1,0 +1,16 @@
+WinWaitActive("Authentication Required")
+$win = "Authentication Required"
+
+Local $aList = WinList()
+
+$win = "Authentication Required"
+    ; Loop through the array displaying only visable windows with a title.
+    For $i = 1 To $aList[0][0]
+        If WinExists("Authentication Required") Then
+           WinWaitActive("Authentication Required")
+		   Send("username")
+		   Send("{TAB}")
+           Send("password")
+           Send("{ENTER}")
+        EndIf
+    Next
