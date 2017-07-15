@@ -1,7 +1,11 @@
 package JavaScriptExecutor_Handel;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,15 +18,46 @@ public class javascript_executor {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\venkateswararao.n\\Desktop\\Browser_Drivers\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Browser_Drivers\\chromedriver.exe");
     	 driver = new ChromeDriver();
     	
+    	 ClickButton_JavaScript();
+    	 
     	 //ClickButton_keys();
     	 
     	 //EnterTextField_keys();
     	 
-    	 WebTitle_keys();
-    	 ClickButton_JS();
+    	// WebTitle_keys();
+    	// ClickButton_JS();
+	}
+	
+	public static void ClickButton_JavaScript(){
+		
+		//System.setProperty("webdriver.chrome.driver", "C:\\Browser_Drivers\\chromedriver.exe");
+		//driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test");
+		driver.switchTo().frame(driver.findElement(By.name("iframeResult")));
+		
+		
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.findElement(By.xpath("//*[contains(text(),'Click Me!')]")).sendKeys(Keys.ENTER);
+		
+		WebElement element = driver.findElement(By.xpath("//*[contains(text(),'Click Me!')]"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", element);
+		
+	
+		
+		Alert alert = driver.switchTo().alert();
+		
+		alert.accept();
+		
+		driver.switchTo().defaultContent();
+		
+		driver.findElement(By.xpath("/html/body/div[5]/div/button")).click();
 	}
 	
 	
